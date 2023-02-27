@@ -1,3 +1,5 @@
+import ThemeToggle from "@/components/theme-toggle";
+import { ArrowRight } from "lucide-react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -10,17 +12,20 @@ export default function HomePage() {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-5xl font-bold mb-7">
           Welcome to{" "}
           <a className="text-blue-600" href="https://nextjs.org">
-            Ui App
+            Ui Replicated App
           </a>
         </h1>
 
+        <ThemeToggle />
+
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           {sandbox.map(({ title, route }) => (
-            <Link key={route} href={route} className="mt-6 w-auto rounded-xl border py-3 px-6 text-left hover:text-blue-600 focus:text-blue-600">
-              <h3 className="text-lg font-semibold">{title} &rarr;</h3>
+            <Link key={route} href={route} className="flex items-center space-x-3  mt-6 w-auto rounded-xl border py-2 px-5 text-left hover:text-blue-600 focus:text-blue-600">
+              <h3 className="text-lg font-semibold">{title}</h3>
+              <ArrowRight size={20} />
             </Link>
           ))}
         </div>
