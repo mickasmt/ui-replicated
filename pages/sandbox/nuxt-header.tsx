@@ -48,6 +48,7 @@ export default function NuxtHeaderPage() {
   return (
     <NuxtLayout>
       <div className="flex flex-col min-h-screen w-full">
+        {/* Header */}
         <header className="sticky top-0 z-30 lg:relative transition-all duration-[0.4s] ease">
           <div className="container mx-auto ">
             <nav
@@ -258,7 +259,8 @@ export default function NuxtHeaderPage() {
 
         <main className="min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] flex flex-col">
           <div className="relative flex-1">
-            {/* sub navigation */}
+            
+            {/* Sub Header */}
             <div className="sticky top-0 z-20 hidden border-t border-transparent lg:block backdrop-blur-md bg-white/75 shadow shadow-gray-200 ">
               <div className="container mx-auto ">
                 <nav
