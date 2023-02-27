@@ -6,7 +6,9 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      // 'nuxt-black': 'rgb(var(--nuxt-color-black) / <alpha-value>)',
+    },
   },
   plugins: [],
 }
