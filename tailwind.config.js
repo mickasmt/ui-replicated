@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class", '[data-theme="dark"]'],
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -7,8 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // 'nuxt-black': 'rgb(var(--nuxt-color-black) / <alpha-value>)',
+      colors: {
+        'nuxt-black': 'rgb(var(--nuxt-color-black) / <alpha-value>)',
+      }
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }

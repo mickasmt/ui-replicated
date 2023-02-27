@@ -1,5 +1,5 @@
 import Link from "next/link";
-import NuxtLayout from "../../components/nuxt/layout";
+import NuxtLayout from "@/components/nuxt/layout";
 
 //links
 const links = [
@@ -259,7 +259,7 @@ export default function NuxtHeaderPage() {
 
         <main className="min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] flex flex-col">
           <div className="relative flex-1">
-            
+
             {/* Sub Header */}
             <div className="sticky top-0 z-20 hidden border-t border-transparent lg:block backdrop-blur-md bg-white/75 shadow shadow-gray-200 ">
               <div className="container mx-auto ">
