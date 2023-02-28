@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Nuxt Js CSS */
 @layer base {
   :root {
     --nuxt-color-black: 12 12 13;
   }
 }
+
+@import url(./nuxt.css);
+/* End Nuxt Js CSS */

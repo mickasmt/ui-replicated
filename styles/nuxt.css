@@ -1,0 +1,46 @@
+/* Fonts */
+@font-face {
+  font-family: 'Roobert PRO';
+  src: url('/nuxt/fonts/RoobertPRO-Regular.woff2') format('woff2'),
+    url('/nuxt/fonts/RoobertPRO-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roobert PRO';
+  src: url('/nuxt/fonts/RoobertPRO-SemiBold.woff2') format('woff2'),
+    url('/nuxt/fonts/RoobertPRO-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roobert PRO';
+  src: url('/nuxt/fonts/RoobertPRO-Medium.woff2') format('woff2'),
+    url('/nuxt/fonts/RoobertPRO-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Classes */
+.nuxt-container {
+  @apply container px-4 sm:px-6 md:px-6 lg:px-8 w-full max-w-none xl:max-w-7xl;
+}
+
+.nuxt-link {
+  @apply text-sm lg:text-base font-medium text-zinc-600 hover:text-zinc-900 focus:text-zinc-900 dark:text-zinc-300;
+}
+.nuxt-link-active {
+  @apply text-sm lg:text-base px-4 py-2 rounded bg-zinc-100 text-zinc-900 shadow-inner font-semibold focus-visible:ring dark:text-white dark:bg-zinc-900;
+}
+
+.nuxt-sublink {
+  @apply font-medium text-zinc-500 hover:text-zinc-900 focus:text-zinc-900 dark:text-zinc-400;
+}
+.nuxt-sublink-active {
+  @apply font-semibold text-zinc-900 dark:text-white;
+}
