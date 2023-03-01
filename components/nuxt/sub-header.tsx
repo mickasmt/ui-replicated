@@ -22,11 +22,9 @@ const sublinks = [
 ];
 
 function NuxtSubHeader() {
-  const [onTop, setOnTop] = useState(true);
+  const [onTop, setOnTop] = useState(false);
 
   const handleScroll = () => {
-    console.log(window.pageYOffset);
-    
     if (onTop !== window.pageYOffset >= 80) {
       setOnTop(window.pageYOffset >= 80);
     }
