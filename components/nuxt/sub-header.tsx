@@ -25,6 +25,8 @@ function NuxtSubHeader() {
   const [onTop, setOnTop] = useState(true);
 
   const handleScroll = () => {
+    console.log(window.pageYOffset);
+    
     if (onTop !== window.pageYOffset >= 80) {
       setOnTop(window.pageYOffset >= 80);
     }
@@ -82,9 +84,8 @@ function NuxtSubHeader() {
           {/* Sublinks center */}
           <ul className="flex justify-center col-span-4 gap-x-8">
             {sublinks.map(({ title, route }) => (
-              <li>
+              <li key={route}>
                 <Link
-                  key={route}
                   href={route}
                   className={
                     route == '/all' ? "nuxt-sublink-active" : "nuxt-sublink"

@@ -138,9 +138,8 @@ function NuxtHeader() {
           {/* Center nav links */}
           <ul className="justify-center hidden lg:col-span-4 lg:gap-x-14 xl:gap-x-16 lg:flex">
             {navlinks.map(({ title, route }) => (
-              <li>
+              <li key={route}>
                 <Link
-                  key={route}
                   href={route}
                   className={
                     route == '/modules' ? "nuxt-link-active" : "nuxt-link"
